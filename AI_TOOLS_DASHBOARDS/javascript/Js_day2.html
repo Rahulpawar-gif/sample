@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        alert('hello welcome to internal JS above closing of a head tag')
+    </script>
+</head>
+
+<body>
+
+    <h1 style="color: aqua;">Welcome To Modern JS Module</h1>
+
+    <hr>
+
+    <pre>
+
+        1. Inline JS - same line with html elements
+        2- Internal JS - same file - with & lt;script&gt;&lt;/script&gt;
+            Option 1 - Above of a head tag
+            Recommended Option 2 - Above closing of a body tag
+
+
+        3- External JS- separate file - with .js extension and import using
+            &lt;script src="path"&gt;&lt;/script&gt;
+
+    </pre>
+
+
+    <!-- Inline JS -->
+
+    <!-- onclick- action or event user performs -->
+    <!-- alert- built in function - show pop up box -->
+
+    <button onclick="alert('hello welcome To Modern JS')">
+        Click Here
+    </button>
+
+    <h1 onclick="alert('hello dear....')">
+        Click Here
+    </h1>
+
+
+    <!-- Internal JS -->
+
+    <!-- Recommended way
+
+    when browser loads the site first it will render UI Part then Logical Part
+
+    -->
+
+    <script>
+
+        alert("Hello welcome to Internal JS above closing of a body tag")
+
+    </script>
+
+
+    <!-- External JS - separate file -->
+
+    <script src="./day2.js"></script>
+
+
+
+
+    <h1>Output Possibilities In JS</h1>
+    <hr>
+
+    <pre>
+
+        alert()- built in function- pop up box- modal box
+
+        Other Language
+
+        c- printf()
+        c++ - cout()
+        php- echo()
+        java- System.out.println()
+        python- print()
+        c#- console.write()
+
+        In JS-
+
+                document.write()- on browser window
+                console.log()- inside developer tool
+
+    <hr>
+    </pre>
+
+
+    <hr>
+
+    <script>
+
+        alert("hello welcome to JS")
+
+        // document.write()
+
+        document.write("Hello Welcome To ES6")
+
+        document.write("<h1>hello this is emmie</h1>")
+        document.write("<div style='height:300px;width:100%;background-color:orange'>")
+
+        document.write("<.assets>")
+
+
+        // console.log
+
+        // helpful for developer to test or debug our code
+        // developer tool
+
+        console.log("Hello this is rahul")
+        console.warn("hello this is warning")
+        console.error("hello this is error")
+
+        console.dir("hello this is dir")
+
+        console.table()
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //take shoping_ammount as a input from user
+        // shop_amt >30000
+        //disc
+        let shop_amt = +prompt("Enter your shopping amount:));
+
+        let discount;
+
+        if (shop_amt > 30000) {
+            discount = 50;
+        } else {
+            discount = 0;
+        }
+
+        let discountAmount = shop_amt * discount / 100;
+        let finalAmount = shop_amt - discountAmount;
+
+        console.log("Shopping Amount:", shop_amt);
+        console.log("Discount:", discount + "%");
+        console.log("Discount Amount:", discountAmount);
+        console.log("Final Amount:", finalAmount);//
+
+
+
+        //if else- used to check 2 condition as a same time
+        if ("ABC") {
+            console.log("MOTU")
+        }
+        else {
+            console.log("patlu")
+        }
+
+        //
+        let no1 = +prompt("enter your number 1")
+        let no2 = +prompt("enter number 2")
+
+
+
+
+
+
+
+
+let shop_amt = Number(prompt("Enter shopping amount:"));
+
+if (shop_amt >= 50000) 
+{
+    console.log("Discount = 40%");
+}
+else if (shop_amt >= 30000) 
+{
+    console.log("Discount = 30%");
+}
+else if (shop_amt >= 20000) 
+{
+    console.log("Discount = 20%");
+}
+else 
+{
+    console.log("Discount = 0%");
+}
+    </script>
+
+
+
+
+
+</body>
+
+</html>

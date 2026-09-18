@@ -3,5 +3,5 @@ function demo3(name,role){
     return name;
     console.log("hello B")
 }
-demo3("Shivam AI Expert")
+demo3("Shivam" ,"AIExpert")
 

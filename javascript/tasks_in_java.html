@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let balance = 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+
+function checkPin(pin) {
+    let correctPin = 2792;
+
+    if (pin === correctPin) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function deposit(amount) {
+    balance = balance + amount;
+    alert("Amount Deposited Successfully");
+}
+
+function checkBalance() {
+    alert("Your Balance is ₹" + balance);
+}
+
+function withdraw(amount) {
+    if (amount <= balance) {
+        balance = balance - amount;
+        alert("Please collect your cash ₹" + amount);
+    } else {
+        alert("Insufficient Balance");
+    }
+}
+
+
+// PIN
+let pin = Number(prompt("Enter your ATM PIN:"));
+
+if (checkPin(pin)) {
+
+    alert("PIN is Correct");
+
+    // Menu
+    let choice = Number(prompt(
+        "1. Deposit\n" +
+        "2. Check Balance\n" +
+        "3. Withdraw"
+    ));
+
+    if (choice === 1) {
+
+        let amount = Number(prompt("Enter Deposit Amount:"));
+        deposit(amount);
+
+    } else if (choice === 2) {
+
+        checkBalance();
+
+    } else if (choice === 3) {
+
+        let amount = Number(prompt("Enter Withdraw Amount:"));
+        withdraw(amount);
+
+    } else {
+
+        alert("Invalid Choice");
+
+    }
+
+} else {
+
+    alert("Incorrect PIN");
+
+}
+    
+</script>
+
+
+
+
+</body>
+</html>

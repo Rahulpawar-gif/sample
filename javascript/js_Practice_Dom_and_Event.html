@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="meter" placeholder="Enter meter">
+
+    <button id="btn">Convert</button>
+
+    <p id="result"></p>
+
+    <script>
+        let meter = document.getElementById("meter");
+        let btn = document.getElementById("btn");
+        let result = document.getElementById("result");
+
+        btn.addEventListener("click", function () {
+            let m = Number(meter.value);
+
+            let km = m / 1000;
+
+            result.innerText = km + " Kilometer";
+        });
+
+
+
+
+
+
+
+
+<input type="number" id="year" placeholder="Enter Birth Year">
+
+<button id="btn">Calculate Age</button>
+
+<h3 id="result"></h3>
+
+
+let year = document.getElementById("year");
+let btn = document.getElementById("btn");
+let result = document.getElementById("result");
+
+btn.onclick = function () {
+
+    let birthYear = Number(year.value);
+
+    let currentYear = new Date().getFullYear();
+
+    let age = currentYear - birthYear;
+
+    result.innerText = "Your Age is " + age + " years";
+};
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
